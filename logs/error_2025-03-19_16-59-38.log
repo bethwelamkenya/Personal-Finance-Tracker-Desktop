@@ -1,0 +1,46 @@
+               Finance Tracker Error Log
+               Timestamp: 2025-03-19_16-59-38
+               
+               Error: Index 0 out of bounds for length 0
+               
+               Stack Trace:
+               java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
+at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:100)
+at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:106)
+at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:302)
+at java.base/java.util.Objects.checkIndex(Objects.java:359)
+at java.base/java.util.ArrayList.get(ArrayList.java:427)
+at ui.screens.Create_transactionKt.AddTransactionScreen$findToAccount(create_transaction.kt:74)
+at ui.screens.Create_transactionKt.access$AddTransactionScreen$findToAccount(create_transaction.kt:1)
+at ui.screens.Create_transactionKt$AddTransactionScreen$2$1.invokeSuspend(create_transaction.kt:94)
+at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:108)
+at androidx.compose.ui.platform.FlushCoroutineDispatcher$flush$1.invoke(FlushCoroutineDispatcher.skiko.kt:90)
+at androidx.compose.ui.platform.FlushCoroutineDispatcher$flush$1.invoke(FlushCoroutineDispatcher.skiko.kt:78)
+at androidx.compose.ui.platform.FlushCoroutineDispatcher.performRun(FlushCoroutineDispatcher.skiko.kt:99)
+at androidx.compose.ui.platform.FlushCoroutineDispatcher.flush(FlushCoroutineDispatcher.skiko.kt:78)
+at androidx.compose.ui.scene.ComposeSceneRecomposer.performScheduledEffects(ComposeSceneRecomposer.skiko.kt:88)
+at androidx.compose.ui.scene.BaseComposeScene.render(BaseComposeScene.skiko.kt:165)
+at androidx.compose.ui.scene.ComposeSceneMediator$DesktopSkikoView.onRender(ComposeSceneMediator.desktop.kt:522)
+at org.jetbrains.skiko.SkiaLayer.update$skiko(SkiaLayer.awt.kt:548)
+at org.jetbrains.skiko.redrawer.AWTRedrawer.update(AWTRedrawer.kt:54)
+at org.jetbrains.skiko.redrawer.WindowsOpenGLRedrawer$Companion$frameDispatcher$1.invokeSuspend(WindowsOpenGLRedrawer.kt:98)
+at org.jetbrains.skiko.redrawer.WindowsOpenGLRedrawer$Companion$frameDispatcher$1.invoke(WindowsOpenGLRedrawer.kt)
+at org.jetbrains.skiko.redrawer.WindowsOpenGLRedrawer$Companion$frameDispatcher$1.invoke(WindowsOpenGLRedrawer.kt)
+at org.jetbrains.skiko.FrameDispatcher$job$1.invokeSuspend(FrameDispatcher.kt:33)
+at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:108)
+at java.desktop/java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:318)
+at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:773)
+at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:720)
+at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:714)
+at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:86)
+at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:742)
+at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+Suppressed: kotlinx.coroutines.internal.DiagnosticCoroutineContextException: [androidx.compose.ui.scene.ComposeContainer$DesktopCoroutineExceptionHandler@59931666, androidx.compose.runtime.BroadcastFrameClock@51f52b63, StandaloneCoroutine{Cancelling}@20a01deb, FlushCoroutineDispatcher@51e9b274]
