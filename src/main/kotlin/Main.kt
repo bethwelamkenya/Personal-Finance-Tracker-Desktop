@@ -1,3 +1,4 @@
+
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.Surface
 import androidx.compose.runtime.Composable
@@ -16,6 +17,7 @@ import models.Screen
 import ui.*
 import ui.screens.*
 import ui.theme.AppTheme
+import utils.ErrorLogger
 import viewModels.MainViewModel
 import viewModels.SettingsViewModel
 import viewModels.ViewModelStore
