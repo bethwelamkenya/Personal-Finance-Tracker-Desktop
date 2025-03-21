@@ -11,10 +11,6 @@ A desktop application built with Kotlin and Compose for Desktop that helps users
 - Real-time transaction history updates
 - Data Visualization: Visualize financial data through charts and graphs
 - User-friendly interface with Material Design 3
-```agsl
-git clone https://github.com/bethwelamkenya/personal-finance-tracker-desktop.git
-```
-
 ## Technologies Used
 - Kotlin: Primary programming language
 - Compose for Desktop: Modern UI toolkit for desktop applications
